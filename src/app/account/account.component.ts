@@ -20,5 +20,6 @@ export class AccountComponent {
   onSetTo(status: string) {
     //this.statusChanged.emit({id: this.id, newStatus: status});
     this.dataService.onStatusChanged({id:this.id, newStatus:status});   
+    this.dataService.statusUpdated.emit(status);
   }
 }

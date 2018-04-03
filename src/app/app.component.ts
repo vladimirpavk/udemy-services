@@ -22,6 +22,6 @@ export class AppComponent implements OnInit{
   }
 
   onStatusChanged(updateInfo: {id: number, newStatus: string}) {
-    this.dataService.onStatusChanged(updateInfo);*/
-  }
+    this.dataService.onStatusChanged(updateInfo);
+  }*/
 }

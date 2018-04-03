@@ -12,8 +12,9 @@ export class NewAccountComponent {
  // @Output() accountAdded = new EventEmitter<{name: string, status: string}>();
 
   constructor(private logginService: LoggingService,
-              private dataService: DataService
-  ){}
+              private dataService: DataService){
+                this.dataService.statusUpdated.subscribe((status)=>alert('New status '+status ));
+              }
 
   onCreateAccount(accountName: string, accountStatus: string) {
     /*this.accountAdded.emit({
